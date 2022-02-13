@@ -1,0 +1,42 @@
+footer {
+    .container {
+        h3 {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .socials {
+            display: flex;
+            justify-content: center;
+            margin: 30px;
+
+            .icon {
+                margin: 0 10px;
+                font-size: 20px;
+
+                a {
+                    i:hover {
+                        transition: 0.5s;
+                        transform: scale(1.5);
+                    }
+                }
+
+                &.facebook {
+                    color: #1877f2;
+                }
+
+                &.instagram {
+                    color: #fc7d40;
+                }
+
+                &.linkedin {
+                    color: #0a66c2;
+                }
+
+                &.twitter {
+                    color: #1da1f2;
+                }
+            }
+        }
+    }
+}

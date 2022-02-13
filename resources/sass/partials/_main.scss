@@ -1,0 +1,55 @@
+main {
+    .container {
+        .articles {
+            display: flex;
+
+            .single-article {
+                width: calc( (100% / 3) - 30px);
+                margin: 15px;
+                border: 1px solid black;
+                border-radius: 10px;
+                cursor: pointer;
+                position: relative;
+                height: 550px;
+                box-shadow: 1px 1px 2px;
+                transition: 0.2s;
+
+                &:hover {
+                    box-shadow: 2px 2px 20px;
+                    transition: 0.2s;
+                    transform: scale(1.01);
+                    transform: translateY(-10px);
+                }
+
+                .top-article {
+                    .article-image {
+                        img {
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                        }
+                    }
+                }
+
+                .bottom-article {
+                    padding: 10px 20px;
+
+                    .article-preview {
+                        font-size: 16px;
+                        margin: 10px 0;
+                    }
+
+                    .article-details {
+                        font-weight: 600;
+                        position: absolute;
+                        bottom: 10px;
+                        left: 20px;
+
+                        .article-publish-date {
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
